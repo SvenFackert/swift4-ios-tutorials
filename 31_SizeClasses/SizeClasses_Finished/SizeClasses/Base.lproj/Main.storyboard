@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClasses" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elCapitan1" translatesAutoresizingMaskIntoConstraints="NO" id="ceE-hR-tXt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="313.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="200" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTN-Md-vSg">
+                                <rect key="frame" x="15" y="389" width="345" height="213"/>
+                                <string key="text">El Capitán is composed almost entirely of El Capitán Granite, a pale, coarse-grained granite emplaced approximately 100 mya (million years ago). In addition to El Capitán, this granite forms most of the rock features of the western portions of Yosemite Valley. A separate intrusion of igneous rock, the Taft Granite, forms the uppermost portions of the cliff face. A third igneous rock, diorite, is present as dark-veined intrusions through both kinds of granite, especially prominent in the area known as the North America Wall.[5] Along with most of the other rock formations of Yosemite Valley, El Capitán was carved by glacial action. Several periods of glaciation have occurred in the Sierra Nevada, but the Sherwin Glaciation, which lasted from approximately 1.3 million years ago (mya) to 1 mya, is considered to be responsible for the majority of the sculpting. The El Capitán Granite is relatively free of joints, and as a result the glacial ice did not erode the rock face as much as other, more jointed, rocks nearby.[6] Nonetheless, as with most of the rock forming Yosemite's features, El Capitán's granite is under enormous internal tension brought on by the compression experienced prior to the erosion that brought it to the surface. These forces contribute to the creation of features such as the Texas Flake, a large block of granite slowly detaching from the main rock face about halfway up the side of the cliff</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOD-Ck-HWy">
+                                <rect key="frame" x="286" y="622" width="74" height="30"/>
+                                <state key="normal" title="Read more"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D56-5t-dmT">
+                                <rect key="frame" x="176" y="622" width="95" height="30"/>
+                                <state key="normal" title="More pictures"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Capitan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-Vq-bHD">
+                                <rect key="frame" x="15" y="348.5" width="345" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elCapitan2" translatesAutoresizingMaskIntoConstraints="NO" id="8nf-eF-ovj">
+                                <rect key="frame" x="384" y="20" width="384" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lTN-Md-vSg" firstAttribute="leading" secondItem="4K0-Vq-bHD" secondAttribute="leading" id="Bch-6g-zx8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ceE-hR-tXt" secondAttribute="bottom" id="FXQ-Q8-XSf"/>
+                            <constraint firstItem="8nf-eF-ovj" firstAttribute="width" secondItem="ceE-hR-tXt" secondAttribute="width" id="Glq-Qm-DwP"/>
+                            <constraint firstAttribute="trailing" secondItem="wOD-Ck-HWy" secondAttribute="trailing" constant="15" id="IzZ-F5-L2A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wOD-Ck-HWy" secondAttribute="bottom" constant="15" id="JhB-W8-cOu"/>
+                            <constraint firstItem="8nf-eF-ovj" firstAttribute="leading" secondItem="ceE-hR-tXt" secondAttribute="trailing" id="Lly-Id-yhH"/>
+                            <constraint firstAttribute="trailing" secondItem="4K0-Vq-bHD" secondAttribute="trailing" constant="15" id="MiT-ox-781"/>
+                            <constraint firstAttribute="trailing" secondItem="4K0-Vq-bHD" secondAttribute="trailing" constant="15" id="NMm-Jt-PHW"/>
+                            <constraint firstItem="wOD-Ck-HWy" firstAttribute="leading" secondItem="D56-5t-dmT" secondAttribute="trailing" constant="15" id="R6k-gc-vHz"/>
+                            <constraint firstAttribute="trailing" secondItem="ceE-hR-tXt" secondAttribute="trailing" id="Rn5-mD-IVq"/>
+                            <constraint firstItem="4K0-Vq-bHD" firstAttribute="leading" secondItem="ceE-hR-tXt" secondAttribute="trailing" constant="15" id="SsB-3e-6oU"/>
+                            <constraint firstItem="D56-5t-dmT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lTN-Md-vSg" secondAttribute="bottom" constant="20" id="Uxy-tq-PgJ"/>
+                            <constraint firstItem="ceE-hR-tXt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VoK-bu-bVc"/>
+                            <constraint firstItem="lTN-Md-vSg" firstAttribute="trailing" secondItem="4K0-Vq-bHD" secondAttribute="trailing" id="YXr-wA-21S"/>
+                            <constraint firstItem="wOD-Ck-HWy" firstAttribute="baseline" secondItem="D56-5t-dmT" secondAttribute="baseline" id="cNg-zL-z2J"/>
+                            <constraint firstItem="4K0-Vq-bHD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="dFv-3T-C60"/>
+                            <constraint firstItem="ceE-hR-tXt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="duf-DH-aBW"/>
+                            <constraint firstItem="8nf-eF-ovj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fte-e7-o78"/>
+                            <constraint firstItem="D56-5t-dmT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lTN-Md-vSg" secondAttribute="leading" id="jsI-W1-xi6"/>
+                            <constraint firstItem="ceE-hR-tXt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" constant="-20" id="m81-Eq-yCj"/>
+                            <constraint firstAttribute="trailing" secondItem="8nf-eF-ovj" secondAttribute="trailing" id="pc1-OX-e9P"/>
+                            <constraint firstItem="lTN-Md-vSg" firstAttribute="top" secondItem="4K0-Vq-bHD" secondAttribute="bottom" constant="20" id="svx-Or-V00"/>
+                            <constraint firstItem="4K0-Vq-bHD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="tMN-Vv-1y1"/>
+                            <constraint firstItem="8nf-eF-ovj" firstAttribute="bottom" secondItem="ceE-hR-tXt" secondAttribute="bottom" id="yYL-RI-WGx"/>
+                            <constraint firstItem="4K0-Vq-bHD" firstAttribute="top" secondItem="ceE-hR-tXt" secondAttribute="bottom" constant="15" id="z2b-fA-fIz"/>
+                            <constraint firstItem="ceE-hR-tXt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="z5D-KO-Mq8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8nf-eF-ovj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Rn5-mD-IVq"/>
+                                <exclude reference="m81-Eq-yCj"/>
+                                <exclude reference="z5D-KO-Mq8"/>
+                                <exclude reference="NMm-Jt-PHW"/>
+                                <exclude reference="SsB-3e-6oU"/>
+                                <exclude reference="dFv-3T-C60"/>
+                                <exclude reference="tMN-Vv-1y1"/>
+                                <exclude reference="z2b-fA-fIz"/>
+                                <exclude reference="FXQ-Q8-XSf"/>
+                                <exclude reference="Glq-Qm-DwP"/>
+                                <exclude reference="Lly-Id-yhH"/>
+                                <exclude reference="fte-e7-o78"/>
+                                <exclude reference="pc1-OX-e9P"/>
+                                <exclude reference="yYL-RI-WGx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="z5D-KO-Mq8"/>
+                                <include reference="NMm-Jt-PHW"/>
+                                <include reference="SsB-3e-6oU"/>
+                                <include reference="dFv-3T-C60"/>
+                                <include reference="FXQ-Q8-XSf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Rn5-mD-IVq"/>
+                                <include reference="m81-Eq-yCj"/>
+                                <include reference="tMN-Vv-1y1"/>
+                                <include reference="z2b-fA-fIz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Rn5-mD-IVq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="8nf-eF-ovj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Glq-Qm-DwP"/>
+                                <include reference="Lly-Id-yhH"/>
+                                <include reference="fte-e7-o78"/>
+                                <include reference="pc1-OX-e9P"/>
+                                <include reference="yYL-RI-WGx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.59375" y="29.882812499999996"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elCapitan1" width="1536" height="1206"/>
+        <image name="elCapitan2" width="2048" height="1536"/>
+    </resources>
+</document>
