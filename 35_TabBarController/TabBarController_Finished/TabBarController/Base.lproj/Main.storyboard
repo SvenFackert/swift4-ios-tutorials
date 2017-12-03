@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EJK-rf-6j5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone 4-->
+        <scene sceneID="fAm-uC-4AT">
+            <objects>
+                <viewController id="N0g-Y7-vi1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vz5-hy-JoG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="URD-Ky-WiU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone 4" image="tab_phone" selectedImage="tab_phone_selected" id="0Ew-ME-rzr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXf-5e-Cw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="478"/>
+        </scene>
+        <!--Phone 5-->
+        <scene sceneID="6eg-gB-KyX">
+            <objects>
+                <viewController id="9xQ-XA-ltR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3fQ-O1-oaB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="awx-lT-8Da"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone 5" image="tab_phone" selectedImage="tab_phone_selected" id="3Ya-yo-gxm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WI9-fK-SRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="479"/>
+        </scene>
+        <!--Phone 6-->
+        <scene sceneID="yTx-KG-xFW">
+            <objects>
+                <viewController id="LrF-gE-a4R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAY-II-aeK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2N5-lr-I1D"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone 6" image="tab_phone" selectedImage="tab_phone_selected" id="fqr-Jh-pkh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4z-za-JXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="477"/>
+        </scene>
+        <!--Phone-->
+        <scene sceneID="cZC-Ci-7Hx">
+            <objects>
+                <viewController id="7im-Hh-o1b" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T4x-sX-tnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="L4t-ke-Elr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone" image="tab_phone" selectedImage="tab_phone_selected" id="Oh8-fz-G4Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWN-m0-JtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="-187"/>
+        </scene>
+        <!--Phone 2-->
+        <scene sceneID="2IG-vP-kWW">
+            <objects>
+                <viewController id="NpM-II-khq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="57f-vp-oh8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="f9p-F0-FlA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone 2" image="tab_phone" selectedImage="tab_phone_selected" id="Aib-mt-vnb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYe-CA-0jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="-187"/>
+        </scene>
+        <!--Phone 3-->
+        <scene sceneID="1y1-9x-qzX">
+            <objects>
+                <viewController id="pRm-Pn-zAu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwM-ng-Khg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Z8E-gR-gHC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Phone 3" image="tab_phone" selectedImage="tab_phone_selected" id="JjI-dF-zqb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztn-Hz-Hk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="-195"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="V9q-kJ-Kg9">
+            <objects>
+                <tabBarController id="EJK-rf-6j5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="8LT-b6-52d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.65490196079999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7im-Hh-o1b" kind="relationship" relationship="viewControllers" id="Jtc-61-zcg"/>
+                        <segue destination="N0g-Y7-vi1" kind="relationship" relationship="viewControllers" id="7pS-iF-nzZ"/>
+                        <segue destination="NpM-II-khq" kind="relationship" relationship="viewControllers" id="UgD-a6-F87"/>
+                        <segue destination="pRm-Pn-zAu" kind="relationship" relationship="viewControllers" id="Vvh-Ip-bx2"/>
+                        <segue destination="9xQ-XA-ltR" kind="relationship" relationship="viewControllers" id="opp-B7-i8x"/>
+                        <segue destination="LrF-gE-a4R" kind="relationship" relationship="viewControllers" id="efK-cJ-Jm8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3G-cy-na7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_phone" width="26" height="26"/>
+        <image name="tab_phone_selected" width="26" height="26"/>
+    </resources>
+</document>
