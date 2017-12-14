@@ -45,7 +45,7 @@
                                                     <rect key="frame" x="318" y="5" width="37" height="33.5"/>
                                                     <state key="normal" title="Invite"/>
                                                     <connections>
-                                                        <action selector="friendInviteButtonAction:" destination="ECo-Yg-41G" eventType="touchUpInside" id="l12-Bu-i9g"/>
+                                                        <action selector="friendInviteButtonAction:" destination="ECo-Yg-41G" eventType="touchUpInside" id="dip-GL-upF"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -94,7 +94,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoA-jb-JUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="paF-Ab-INX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2668" y="-610"/>
+            <point key="canvasLocation" x="2668" y="-610.34482758620697"/>
         </scene>
         <!--My Birthday-->
         <scene sceneID="tne-QT-ifu">
