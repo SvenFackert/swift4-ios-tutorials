@@ -43,6 +43,7 @@
                         <barButtonItem key="rightBarButtonItem" title="My Location" id="Pyk-c7-hQk">
                             <connections>
                                 <action selector="myLocationBarButtonAction:" destination="BYZ-38-t0r" id="UG5-5M-ZuN"/>
+                                <segue destination="nWt-lN-xkr" kind="show" id="nkV-A0-MeS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -53,7 +54,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+            <point key="canvasLocation" x="698" y="36"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="juV-08-YlF">
+            <objects>
+                <viewController id="nWt-lN-xkr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zOK-pX-x3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Myd-ZM-YOM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" leftItemsSupplementBackButton="YES" id="XQE-pz-MGQ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ccX-dr-bpy"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9w-li-8I9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aNc-Wt-l1i">
@@ -71,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZQ-e0-3gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120.8" y="691.304347826087"/>
+            <point key="canvasLocation" x="17" y="37"/>
         </scene>
     </scenes>
 </document>
