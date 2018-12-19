@@ -31,17 +31,17 @@ class ViewController: UIViewController {
     
     func createAnnotation() {
         let annoation: MKPointAnnotation = MKPointAnnotation()
-        annoation.coordinate = CLLocationCoordinate2DMake(37.313728, -122.044973)
+        annoation.coordinate = CLLocationCoordinate2DMake(49.24721783, 7.36375809)
         annoation.title = "Location 1"
         self.locations.append(annoation)
         
         let annoation2: MKPointAnnotation = MKPointAnnotation()
-        annoation2.coordinate = CLLocationCoordinate2DMake(36.313728, -121.044973)
+        annoation2.coordinate = CLLocationCoordinate2DMake(49.28079637, 7.37491608)
         annoation2.title = "Location 2"
         self.locations.append(annoation2)
         
         let annoation3: MKPointAnnotation = MKPointAnnotation()
-        annoation3.coordinate = CLLocationCoordinate2DMake(38.313728, -123.044973)
+        annoation3.coordinate = CLLocationCoordinate2DMake(49.26500414, 7.280159)
         annoation3.title = "Location 3"
         self.locations.append(annoation3)
         
