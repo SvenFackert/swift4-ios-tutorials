@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_7_ScrollViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ty-bd-Mv8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl3-i5-1fA" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1070"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-nz-cSD">
+                                                <rect key="frame" x="16" y="16" width="343" height="264"/>
+                                                <string key="text">Legt ein UIScrollView in euren ViewController und pinnt ihn an alle Seiten an. Schachtelt dann ein UIView innerhalb der ScrollView und pinnt es in alle Richtungen mit 0 Points Abstand an. Abschließend gebt ihr dem UIView ein Constraint mit gleicher Höhe und gleicher Breite wie die Safe Area (oder die Parent View von der Scroll View wenn es bei euch noch andere Views dazwischen gibt). Das Constraint "Gleiche Höhe" müsst ihr anschließend bearbeiten (im Size Inspector) und ihm eine Priorität von 250 (statt 1000) geben. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constraints im Content View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-f6-8nd">
+                                                <rect key="frame" x="16" y="304" width="343" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWb-av-YT2">
+                                                <rect key="frame" x="16" y="341" width="343" height="345"/>
+                                                <string key="text">In das UIView könnt ihr jetzt eure Views einfügen. Wichtig dabei ist, dass der oberste View nach oben (zum umschließenden UIView) angepinnt ist und der unterste View nach unten angepinnt ist. Alle Views dawischen müssen vertikal immer einen Abstand zum nächsten haben. Nur wenn es durchgehende Constraints von oben bis unten gibt, weiß der umschließende UIView wie hoch er sein muss. Mindestens ein View in dieser Reihe von oben nach unten muss eine niedrigere vertikale Content Hugging Priority haben als die anderen. In diesem Fall hat das folgende Textfeld eine Content Hugging Priority von 249 statt 250. (Deshalb sieht es auch so groß aus - das wir sich zur Laufzeit aber ändern.)</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-FK-JHq">
+                                                <rect key="frame" x="16" y="708.5" width="343" height="81.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wie kann ich sehen was außerhalb des angezeigten Bereichs liegt?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj4-hW-MA0">
+                                                <rect key="frame" x="16" y="814" width="343" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5K-CG-SeF">
+                                                <rect key="frame" x="16" y="871" width="343" height="183"/>
+                                                <string key="text">Um seine Views auch außerhalb des sichtbaren Bereichs im Interface Builder ausrichten zu können, könnt ihr auf den ViewController klicken (gelber Punkt oben), im Size Inspector bei  "Simulated Size" Freeform auswählen und dann die Höhe auf eine größere Zahl stellen (z.B. 1000). Dann bekommt ihr im Interface Builder den ViewController höher angezeigt.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="g5K-CG-SeF" firstAttribute="top" secondItem="bj4-hW-MA0" secondAttribute="bottom" constant="16" id="6hn-8Y-HTq"/>
+                                            <constraint firstItem="Asl-FK-JHq" firstAttribute="top" secondItem="eWb-av-YT2" secondAttribute="bottom" constant="22.5" id="B4G-4e-MPL"/>
+                                            <constraint firstItem="BMf-nz-cSD" firstAttribute="leading" secondItem="jl3-i5-1fA" secondAttribute="leading" constant="16" id="BeC-Mr-j2H"/>
+                                            <constraint firstItem="bj4-hW-MA0" firstAttribute="trailing" secondItem="eWb-av-YT2" secondAttribute="trailing" id="LNQ-iv-8oc"/>
+                                            <constraint firstItem="1hf-f6-8nd" firstAttribute="leading" secondItem="BMf-nz-cSD" secondAttribute="leading" id="MVG-1e-OFc"/>
+                                            <constraint firstItem="eWb-av-YT2" firstAttribute="leading" secondItem="BMf-nz-cSD" secondAttribute="leading" id="N2j-89-7DI"/>
+                                            <constraint firstAttribute="trailing" secondItem="BMf-nz-cSD" secondAttribute="trailing" constant="16" id="RrS-Is-9gi"/>
+                                            <constraint firstItem="1hf-f6-8nd" firstAttribute="trailing" secondItem="BMf-nz-cSD" secondAttribute="trailing" id="WqR-RT-twk"/>
+                                            <constraint firstAttribute="bottom" secondItem="g5K-CG-SeF" secondAttribute="bottom" constant="16" id="eq9-Nl-krd"/>
+                                            <constraint firstItem="Asl-FK-JHq" firstAttribute="trailing" secondItem="eWb-av-YT2" secondAttribute="trailing" id="gwj-Me-v3v"/>
+                                            <constraint firstItem="BMf-nz-cSD" firstAttribute="top" secondItem="jl3-i5-1fA" secondAttribute="top" constant="16" id="mi9-DB-zzP"/>
+                                            <constraint firstItem="g5K-CG-SeF" firstAttribute="trailing" secondItem="eWb-av-YT2" secondAttribute="trailing" id="oDe-Wf-ufz"/>
+                                            <constraint firstItem="eWb-av-YT2" firstAttribute="top" secondItem="1hf-f6-8nd" secondAttribute="bottom" constant="16" id="r48-tw-rbU"/>
+                                            <constraint firstItem="bj4-hW-MA0" firstAttribute="leading" secondItem="eWb-av-YT2" secondAttribute="leading" id="rk6-oV-onG"/>
+                                            <constraint firstItem="Asl-FK-JHq" firstAttribute="leading" secondItem="eWb-av-YT2" secondAttribute="leading" id="uix-jR-uXV"/>
+                                            <constraint firstItem="bj4-hW-MA0" firstAttribute="top" secondItem="Asl-FK-JHq" secondAttribute="bottom" constant="24" id="vGK-iz-dsy"/>
+                                            <constraint firstItem="g5K-CG-SeF" firstAttribute="leading" secondItem="eWb-av-YT2" secondAttribute="leading" id="vqC-Uz-JaJ"/>
+                                            <constraint firstItem="eWb-av-YT2" firstAttribute="trailing" secondItem="BMf-nz-cSD" secondAttribute="trailing" id="wqu-ix-tDb"/>
+                                            <constraint firstItem="1hf-f6-8nd" firstAttribute="top" secondItem="BMf-nz-cSD" secondAttribute="bottom" constant="24" id="xcI-P0-djg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jl3-i5-1fA" firstAttribute="leading" secondItem="0ty-bd-Mv8" secondAttribute="leading" id="Oag-hD-Xc0"/>
+                                    <constraint firstItem="jl3-i5-1fA" firstAttribute="top" secondItem="0ty-bd-Mv8" secondAttribute="top" id="Yy5-AP-5uR"/>
+                                    <constraint firstAttribute="bottom" secondItem="jl3-i5-1fA" secondAttribute="bottom" id="iMl-SW-3gD"/>
+                                    <constraint firstAttribute="trailing" secondItem="jl3-i5-1fA" secondAttribute="trailing" id="oNs-7i-AAN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jl3-i5-1fA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8Tf-1q-tU8"/>
+                            <constraint firstItem="0ty-bd-Mv8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EQc-gE-8aE"/>
+                            <constraint firstItem="0ty-bd-Mv8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gL8-hC-r9A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ty-bd-Mv8" secondAttribute="trailing" id="gbB-9T-mx9"/>
+                            <constraint firstAttribute="bottom" secondItem="0ty-bd-Mv8" secondAttribute="bottom" id="tes-rd-dFz"/>
+                            <constraint firstItem="jl3-i5-1fA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="zjs-M3-cGD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1070"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
